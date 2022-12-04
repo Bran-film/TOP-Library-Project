@@ -15,14 +15,7 @@ newBookBtn.addEventListener("click", () => (popUpForm.style.display = "block"));
 closePopUp.addEventListener("click", () => (popUpForm.style.display = "none"));
 
 // JS Library Vars
-let myLibrary = [
-  {
-    title: "The Hobbit",
-    author: "J.R.R. Tolkien",
-    pages: 304,
-    status: "read",
-  },
-];
+let myLibrary = [];
 let newBook;
 
 // Object
@@ -43,7 +36,7 @@ function addBookToLibrary() {
   const title = form.title.value;
   const author = form.author.value;
   const pages = form.pages.value;
-  const status = form.status.value;
+  const status = form.status.checked;
 
   newBook = new Book(title, author, pages, status);
   myLibrary.push(newBook);
@@ -75,8 +68,7 @@ function printBook(item) {
   book.classList.add("book");
   book.setAttribute("id", myLibrary.indexOf(item));
 
-  console.log(item.status);
-  if (item.status === "read") {
+  if (item.status === true) {
     book.textContent = `I have read "${item.title}" from ${item.author}, all ${item.pages} pages of it!`;
   } else {
     book.textContent = `I really want to read "${item.title}" from ${item.author}, which is ${item.pages} pages!`;

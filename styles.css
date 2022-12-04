@@ -30,8 +30,15 @@ body {
   height: 900px;
   width: 640px;
   background-color: #f5f5f5;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 0;
+  border: none;
+  border-radius: 10px;
+}
+
+/* LIBRARY */
+#library {
+  padding-left: 20px;
 }
 
 /* LISTs */
@@ -71,7 +78,20 @@ body {
 }
 ​ */
 
-/* BUTTON ADD */
+/* BUTTONS LISTS */
+li button {
+  margin: 0 10px;
+  font-family: inherit;
+}
+
+.readBtn,
+#removeBtn {
+  padding: 5px;
+  outline: 0;
+  cursor: pointer;
+}
+
+/* BUTTON NEW BOOK - Modal Opener */
 #new-book {
   position: absolute;
   right: 20px;
@@ -84,6 +104,29 @@ body {
   border-radius: 50%;
   height: 50px;
   width: 50px;
+}
+
+/* FORM POPUP */
+#popup-form {
+  position: absolute;
+  left: 20px;
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+.form-head {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#addBtn {
+  width: 100px;
+  padding: 5px;
+  outline: 0;
+  cursor: pointer;
+  color: #f0f0f0;
+  background-color: #007714;
 }
 
 /* FOOTER */
