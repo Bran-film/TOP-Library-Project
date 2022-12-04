@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@400;700&family=Special+Elite&family=Ubuntu&display=swap");
+
+* {
+  font-family: "Special Elite", cursive;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.header img {
+  width: 24px;
+  height: 24px;
+}
+
+/* CONTAINER */
+.container {
+  position: relative;
+  height: 900px;
+  width: 640px;
+  background-color: #f5f5f5;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* LISTs */
+.list {
+  color: #555;
+  font-size: 22px;
+  padding: 0 !important;
+  width: 500px;
+  border: 1px solid #dedede;
+}
+
+.list li {
+  list-style: none;
+  border-bottom: 1px dotted #ccc;
+  text-indent: 25px;
+  height: auto;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.list li:hover {
+  background-color: #f0f0f0;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+/* LINES
+.lines {
+  border-left: 1px solid #ffaa9f;
+  border-right: 1px solid #ffaa9f;
+  width: 2px;
+  float: left;
+  height: 495px;
+  margin-left: 40px;
+}
+​ */
+
+/* BUTTON ADD */
+#new-book {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 36px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #0095ff;
+  border: none;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+/* FOOTER */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  color: rgb(0, 0, 0);
+}
+
+.footer a {
+  color: rgb(226, 147, 0);
+}
